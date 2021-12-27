@@ -1,6 +1,6 @@
 {
   "name": "sfmsock-wss-proxy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts data from an SFM SOCK client into a websocket server",
   "main": "index.js",
   "scripts": {
