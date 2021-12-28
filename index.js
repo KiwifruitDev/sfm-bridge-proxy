@@ -1,4 +1,4 @@
-// SFM SOCK Websocket Server Proxy
+// SFM Bridge Proxy
 // This software is licensed under the MIT License.
 // Copyright (c) 2021 KiwifruitDev
 
@@ -13,11 +13,11 @@
 const net = require("net");
 const websockets = require("ws");
 const fs = require("fs");
-const websocket_port = process.env.SFMSOCK_WS_PORT || fs.readFileSync("websocket_port.txt", "utf8") || 9090;
-const tcp_port = process.env.SFMSOCK_TCP_PORT || fs.readFileSync("tcp_port.txt", "utf8") || 9191;
+const websocket_port = process.env.SFM_BRIDGE_WS_PORT || fs.readFileSync("websocket_port.txt", "utf8") || 9090;
+const tcp_port = process.env.SFM_BRIDGE_TCP_PORT || fs.readFileSync("tcp_port.txt", "utf8") || 9191;
 const package = require('./package.json');
 
-console.log("=== SFM SOCK Websocket Server v" + package.version + " ===");
+console.log("=== SFM Bridge Proxy v" + package.version + " ===");
 
 // Websocket server portion
 const wss = new websockets.Server({ port: websocket_port }, function () {
@@ -100,6 +100,3 @@ function exit() {
 		process.exit(0);
 	}
 }
-
-//process.on("exit", exit);
-//process.on("SIGINT", exit);

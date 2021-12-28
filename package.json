@@ -1,21 +1,21 @@
 {
-  "name": "sfmsock-wss-proxy",
-  "version": "1.0.1",
-  "description": "Converts data from an SFM SOCK client into a websocket server",
+  "name": "sfm-bridge-proxy",
+  "version": "1.0.2",
+  "description": "Converts data from an SFM Bridge client into a websocket server",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TeamPopplio/sfmsock-wss-proxy.git"
+    "url": "git+https://github.com/TeamPopplio/sfm-bridge-proxy.git"
   },
   "author": "KiwifruitDev",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TeamPopplio/sfmsock-wss-proxy/issues"
+    "url": "https://github.com/TeamPopplio/sfm-bridge-proxy/issues"
   },
-  "homepage": "https://github.com/TeamPopplio/sfmsock-wss-proxy#readme",
+  "homepage": "https://github.com/TeamPopplio/sfm-bridge-proxy#readme",
   "dependencies": {
     "ws": "^8.3.0"
   }
